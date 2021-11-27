@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <!--Título do formulário-->
+        <title>Formulário de Inscrição</title>
+            
+    </head>
+
+    <body>  
+
+        <div>
+
+            <h1 id="titulo">Formulário de inscrição</h1>
+           
+        </div>
+
+        <!--Ínicio do formuário-->
+        <form>
+            <!-- Criação e preenchimento do formulário-->
+            <fieldset style="width: 500px; height: 500px;">
+
+                <div class="Label_nome">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome"  placeholder="Insira seu nome" required>
+                    
+                </div>
+
+                <div class="Label_sobrenome">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome" required>
+                </div>
+
+                <div class="Label_idade">
+                    <label for="idade"><strong>Idade</strong></label>
+                    <input type="number" name="idade" min="18" max="120" placeholder="Insira sua idade" required> <label> (Idade mínima 18 e máxima 120)</label>
+                </div>  
+
+                 <div class="Label_idade_email">
+                     <label for="email"><strong>Email</strong></label>
+                     <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                 </div>
+
+                 <div class="Label_genero">
+                    <label for="sexo"><strong>Selecione seu gênero: </strong></label>
+                    <label>
+                        <input type="radio" id="" name="sexo" value="feminino" > Feminino
+                    </label>
+                    <label>
+                        <input type="radio" id="" name="sexo" value="masculino" > Masculino
+                    </label>
+                    
+                </div>
+                
+                 <div class="Labem_documento">
+                     <label for="foto"><strong>Inserir arquivo</strong></label>
+                     <input type="file" value="selecionar arquivo" accept="image/jpeg, image/png"
+                     
+                 </div>
+             
+                <div class="Label_país">
+                    <label for="país"><strong>Selecione o país:</strong></label>
+                    <select name="País" id="">
+
+                        <option value="null"></option>
+                        <option value="1">Brasil</option>
+                        <option value="2">Argentina</option>
+                        <option value="3">Colômbia</option>
+                        <option value="4">Peru</option>
+                        <option value="5">Chile</option>
+                        <option value="6">Equador</option>
+                        <option value="7">Venezuela</option>
+                        <option value="8">Bolívia</option>
+                        <option value="9">Argentina</option>
+                        <option value="10">Estados Unidos</option>
+                        <option value="11">Canadá</option>
+                        <option value="12">México</option>
+                        <option value="13">Cuba</option>
+                        <option value="14">Jamaica</option>
+                        <option value="15">Groenlândia</option>                   
+
+                    </select>
+                </div>
+
+                <div class="Label_linguagem">
+                    <label for="curso"><strong>Linguagens que prefere:</strong></label>
+                    <select name="programação" id="" multiple>
+
+                        <option value="Java">Java</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="C#">C#</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="Angular">Angular</option>
+
+                    </select>
+                    <label> ( Para mais de uma opção mantenha CTRL pressionado.)</label>
+
+                </div>
+    
+                <div class="Label_atuacao">
+
+                    <label> <strong>Área de atuação:</strong> </label>
+                    <input type="checkbox">
+                    <label for=""> Computação</label>
+                    <input type="checkbox">
+                    <label for="">Gestão</label>
+                    <input type="checkbox">
+                    <label for="">Pedagogia</label>                 
+    
+                </div>               
+
+                <button class="botao" type="submit" onsubmit="">Enviar</button> 
+                <button class="botao" type="reset" onsubmit="">Limpar</button>
+                
+                
+             </fieldset>
+            
+                     
+
+    </body>
+
+</html>
